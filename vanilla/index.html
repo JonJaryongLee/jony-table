@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Sortable Member Table</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>멤버 목록</h1>
+      <div id="table-container">
+        <table id="sortable-table">
+          <thead>
+            <tr>
+              <!-- Data attributes (data-key)를 사용하여 정렬 기준을 지정합니다. -->
+              <th data-key="id" class="sortable-header">
+                <span class="header-text">ID</span>
+                <span
+                  class="material-symbols-outlined sort-icon"
+                  data-icon-for="id"
+                  >unfold_more</span
+                >
+              </th>
+              <th data-key="name" class="sortable-header">
+                <span class="header-text">이름</span>
+                <span
+                  class="material-symbols-outlined sort-icon"
+                  data-icon-for="name"
+                  >unfold_more</span
+                >
+              </th>
+              <th data-key="age" class="sortable-header">
+                <span class="header-text">나이</span>
+                <span
+                  class="material-symbols-outlined sort-icon"
+                  data-icon-for="age"
+                  >unfold_more</span
+                >
+              </th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <!-- JavaScript가 여기에 데이터를 렌더링합니다. -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
